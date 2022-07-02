@@ -244,6 +244,6 @@ fn main() {
 
 fn app(cx: Scope) -> Element {
     cx.render(rsx! {
-          web::Circle{x: 10f64, y:10f64, radius:5f64}
+          web::Canvas{web::Circle{x: 10f64, y:10f64, radius:5f64}}
     })
 }
