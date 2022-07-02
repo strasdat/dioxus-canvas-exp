@@ -1,0 +1,23 @@
+[package]
+name = "dioxus-canvas"
+version = "0.1.0"
+authors = ["@dementhos"]
+edition = "2021"
+description = "Canvas wrapper for Dioxus"
+
+[dependencies]
+dioxus-core = { version = "^0.2.1" }
+dioxus-web = { version = "^0.2.1" }
+
+dioxus-core-macro = { version = "^0.2.0" }
+dioxus-html = { version = "^0.2.1" }
+dioxus-hooks = { version = "^0.2.1" }
+piet = "0.5.0"
+piet-web = "0.5.0"
+tokio = { version = "1.19.2", features = ["time"] }
+web-sys = { version = "0.3", features = ["CanvasRenderingContext2d", "HtmlCanvasElement"] }
+wasm-bindgen = "0.2"
+
+log = "0.4.6"
+wasm-logger = "0.2.0"
+console_error_panic_hook = "0.1.7"
